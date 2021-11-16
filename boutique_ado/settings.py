@@ -178,8 +178,8 @@ USE_TZ = True
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-if 'DEV' in os.environ:STATIC_URL = '/static/' 
-    else:
+if 'DEV' in os.environ:STATIC_URL = '/static/'
+else:
         STATIC_URL = '/staticfiles/' 
         STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
